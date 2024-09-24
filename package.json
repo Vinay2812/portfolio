@@ -15,6 +15,7 @@
     "@react-three/fiber": "^8.16.6",
     "emailjs": "^4.0.3",
     "framer-motion": "^11.1.9",
+    "lodash": "^4.17.21",
     "maath": "^0.10.7",
     "next": "14.2.3",
     "react": "^18",
@@ -24,10 +25,11 @@
     "three": "^0.164.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.9",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/three": "^0.164.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
