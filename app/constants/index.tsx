@@ -305,8 +305,8 @@ const projects = [
       },
     ],
     image: "/projectimg/tictactoe.png",
-    source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-    netlify_link: "https://reactadmindashboardbyom.netlify.app/",
+    source_code_link: "https://github.com/Vinay2812/tic-tac-toe",
+    netlify_link: "https://tic-tac-toe-by-vinay2812.vercel.app/",
   },
   {
     name: "Portfolio website",
@@ -331,8 +331,8 @@ const projects = [
       },
     ],
     image: "/projectimg/portfolio.png",
-    source_code_link: "https://github.com/omunite215/portfolio",
-    netlify_link: "https://portfoliobyompatel.netlify.app/",
+    source_code_link: "https://github.com/Vinay2812/portfolio",
+    netlify_link: "https://vinaysarda.vercel.app/",
   },
 ];
 
