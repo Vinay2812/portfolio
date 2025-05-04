@@ -97,7 +97,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col justify-between items-center">
         <div className="relative w-full h-[230px]">
           <Image
             src={image}

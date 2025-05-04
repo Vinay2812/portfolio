@@ -4,7 +4,6 @@ import { SectionWrapper } from "./HigherOrderComponents";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
-import { services } from "../constants";
 import { fadeIn, textVariant } from "@/app/utils/motion";
 import useVisibility from "../utils/helpers";
 import { useEffect } from "react";
@@ -34,17 +33,16 @@ const About = ({ setActive }: any) => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
       >
-        As a talented Front-End Web Developer and UI/UX Designer, I have honed
-        my skills in working with a variety of JavaScript libraries, including
-        React.js, Next.js and Three.js. Through my experience, I have developed
-        a deep understanding of how these libraries can be leveraged to create
-        dynamic and engaging user interfaces. In addition, I am a quick learner
-        and have worked on numerous projects using popular CSS frameworks such
-        as Tailwind and Bootstrap. I am confident in my ability to create sleek
-        and responsive designs that meet the specific needs of any project. With
-        a keen eye for detail and a passion for delivering high-quality work, I
-        am dedicated to creating beautiful and user-friendly experiences that
-        delight users.
+        I’m Vinay Sarda, a Software Development Engineer at Infybytes AI Labs
+        with expertise in full-stack development, cloud solutions, and
+        performance optimization. I specialize in React, Node.js, MongoDB, AWS,
+        and GCP. I’ve successfully led cloud migration projects, optimized
+        system performance, and built scalable solutions that improve user
+        experience. My competitive programming experience on Leetcode and
+        GeeksforGeeks has honed my problem-solving skills. I’m passionate about
+        delivering efficient, user-centric solutions and continuously improving
+        my skill set. Feel free to explore my portfolio, and let’s connect if
+        you’re interested in collaborating!
       </motion.p>
       {/* <div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (

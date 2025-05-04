@@ -25,7 +25,7 @@ const Navbar = ({ active, setActive }: any) => {
             window.scrollTo(0, 0);
           }}
         >
-          <Link href="https://github.com/Vinay2812">
+          <Link href="https://github.com/Vinay2812" target="_blank">
             <Image
               src={Avatar}
               width={40}

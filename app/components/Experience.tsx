@@ -29,12 +29,12 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
       visible={true}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <Image
+          <img
             src={experience.icon}
             width={48}
             height={48}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[100%] h-[100%] object-contain"
           />
         </div>
       }

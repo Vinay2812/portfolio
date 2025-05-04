@@ -36,119 +36,157 @@ const services = [
   },
 ];
 
-// const technologies = [
-// 	{
-// 		name: "HTML 5",
-// 		icon: "/tech/html.webp",
-// 	},
-// 	{
-// 		name: "CSS 3",
-// 		icon: "/tech/css.webp",
-// 	},
-// 	{
-// 		name: "JavaScript",
-// 		icon: "/tech/javascript.webp",
-// 	},
-// 	{
-// 		name: "TypeScript",
-// 		icon: "/tech/typescript.webp",
-// 	},
-// 	{
-// 		name: "React JS",
-// 		icon: "/tech/reactjs.webp",
-// 	},
-// 	{
-// 		name: "Next.JS",
-// 		icon: "/tech/nextjs.svg",
-// 	},
-// 	{
-// 		name: "Redux Toolkit",
-// 		icon: "/tech/redux.webp",
-// 	},
-// 	{
-// 		name: "Tailwind CSS",
-// 		icon: "/tech/tailwind.webp",
-// 	},
-// 	{
-// 		name: "Three JS",
-// 		icon: "/tech/threejs.webp",
-// 	},
-// 	{
-// 		name: "git",
-// 		icon: "/tech/git.webp",
-// 	},
-// 	{
-// 		name: "figma",
-// 		icon: "/tech/figma.webp",
-// 	},
-// 	{
-// 		name: "wordpress",
-// 		icon: "/tech/wordpress.webp",
-// 	},
-// 	{
-// 		name: "bootstrap",
-// 		icon: "/tech/bootstrap.webp",
-// 	},
-// ];
-
-const technologies = [
-  "html",
-  "css",
-  "javascript",
-  "tailwind",
-  "react",
-  "nextjs",
-  "redux",
-  "nodejs",
-  "redis",
-  "mongodb",
-  "mysql",
-  "postgresql",
-  "git",
-  "figma",
-  "socketio",
-  "typescript",
-  "docker",
-  "java",
-  "c",
-  "c++",
-  "graphql",
-  "apollo",
-  "expressjs",
-  "zustand",
-  "webdriverio",
-  "kotlin",
-  "flutter",
-  "materialui",
-  "antd",
-  "hasura",
-];
+const technologies = {
+  "Next.js": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Next.js_logo.svg",
+    color: "blue-text-gradient",
+  },
+  React: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    color: "rose-text-gradient",
+  },
+  "Node.js": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    color: "green-text-gradient",
+  },
+  "Express.js": {
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    color: "pink-text-gradient",
+  },
+  "Socket.io": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Socket.IO_logo_2014.png",
+    color: "orange-text-gradient",
+  },
+  Redux: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Redux_Logo.png",
+    color: "purple-text-gradient",
+  },
+  "React Query": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4f/React_Query_Logo.png",
+    color: "blue-text-gradient",
+  },
+  TypeScript: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4f/TypeScript_Logo_2020.svg",
+    color: "blue-text-gradient",
+  },
+  JavaScript: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/JavaScript_logo_2.svg",
+    color: "yellow-text-gradient",
+  },
+  HTML: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/HTML5_logo_and_wordmark.svg",
+    color: "red-text-gradient",
+  },
+  CSS: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+    color: "blue-text-gradient",
+  },
+  Tailwind: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    color: "pink-text-gradient",
+  },
+  MongoDB: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/MongoDB_Logo.svg",
+    color: "green-text-gradient",
+  },
+  PostgreSQL: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+    color: "blue-text-gradient",
+  },
+  GraphQL: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/0/0e/GraphQL_Logo.svg",
+    color: "pink-text-gradient",
+  },
+  Apollo: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Apollo-GraphQL-logo.svg",
+    color: "purple-text-gradient",
+  },
+  Redis: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Redis_Logo.svg",
+    color: "red-text-gradient",
+  },
+  GCP: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/38/Google_Cloud_Platform_logo.svg",
+    color: "blue-text-gradient",
+  },
+  AWS: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Amazon_Web_Services_Logo.svg",
+    color: "orange-text-gradient",
+  },
+  Docker: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_Logo.svg",
+    color: "blue-text-gradient",
+  },
+  "Material UI": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Material_Design_Logo.svg",
+    color: "pink-text-gradient",
+  },
+  "Ant Design": {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/37/Ant_Design_logo.svg",
+    color: "purple-text-gradient",
+  },
+  Zustand: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a2/Zustand_logo.svg",
+    color: "green-text-gradient",
+  },
+  Git: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Git-Logo.svg",
+    color: "orange-text-gradient",
+  },
+  Figma: {
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Figma-logo.svg",
+    color: "blue-text-gradient",
+  },
+  WebdriverIO: {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/WebdriverIO_logo.svg",
+    color: "pink-text-gradient",
+  },
+};
 
 const experiences = [
   {
-    title: "Web Designer",
-    company_name: "A.V.M Auto",
-    icon: "/company/avm.webp",
+    title: "SDE - I",
+    company_name: "InfyBytes AI Labs Pvt. Ltd.",
+    icon: "https://play-lh.googleusercontent.com/VJoGzC0zd8ZrM7UCnkR95BfBHXiHpXVdeRUnIKunyNOLLMX-_o25tYucGQGqmdJR2b0=s96-rw",
     iconBg: "#383E56",
-    date: "2020 -  2021",
+    date: "Aug 2023 -  Current",
     points: [
-      "Analyzing the needs of customer in a website.",
-      "Designing User Interface (UI) for the problem statement.",
-      "Improving designs to make more user friendly.",
-      "User Experience improvements and feedbacks.",
+      "Led a cloud migration project from AWS (EC2, S3, Lambda, RDS, MongoDB) to GCP (VM, Cloud Storage, Cloud Run, CloudSQL), reducing operational costs by 30-35% and deployment time by 40%.",
+      "Engineered an audio generation system using ElevenLabs/OpenAI and AWS SQS, improving feature usage by 35% and user feedback by 60% through efficient rate limit management and MongoDB caching",
+      "Reduced landing page load time by 65% by optimizing bundles, refining APIs, and implementing Redis caching, which boosted user engagement by 25%",
+      "Diagnosed and resolved performance bottlenecks in the Figma-to-Pixi.js converter, improving system performance by 60-70% and reducing hang issues by 30%.",
     ],
   },
   {
-    title: "Wordpress Developer",
-    company_name: "A.V.M Auto",
-    icon: "/company/avm.webp",
+    title: "Full Stack Developer Intern",
+    company_name: "InfyBytes AI Labs Pvt. Ltd.",
+    icon: "https://play-lh.googleusercontent.com/_1GuCvc8dhJ8JECFa52V8ngD1uM9fMPhztmHjsAM36zuBbZbr0wJsUMBERnRFUCaPFQ=s96-rw",
     iconBg: "#E6DEDD",
-    date: "2021 - 2022",
+    date: "Feb 2023 - Aug 2023",
     points: [
-      "Developing and maintaining Wordpress Site for A.V.M Auto The Car Body Shop based in Ahmedabad, Gujarat India.",
-      "Analyzing feedbacks and fixing bugs.",
-      "Search Engine Optimization.",
-      "Design Maintainence and hosting maintenance.",
+      "Integrated Razorpay for web-based payments and developed custom native plugins for Android and Apple platforms, processing transactions that generated 2 million INR in revenue",
+      "Enhanced API response times by 71% through Redis caching and query optimization in MongoDB and GraphQL, improving user experience",
+      "Revamped the Figma workflow using a component-driven approach inspired by React, reducing development time by 30-40%.",
+      "Developed a record feature for a Figma plugin that captures changes and converts them into executable interaction flows, reducing flow creation time by 80%.",
     ],
   },
 ];
@@ -157,154 +195,142 @@ const testimonials = [
   {
     id: 1,
     testimonial:
-      "Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
-    name: "Om Patel",
-    image: "/socialmedia/behance.svg",
-    link: "https://www.behance.net/omthecreator",
+      "LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
+    name: "Vinay Sarda",
+    image: "/socialmedia/linkedin.svg",
+    link: "https://www.linkedin.com/in/vinay-sarda-360219205/",
   },
   {
     id: 2,
     testimonial:
-      "LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-    name: "Om Patel",
-    image: "/socialmedia/linkedin.svg",
-    link: "https://www.linkedin.com/in/om-patel-401068143/",
+      "Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
+    name: "Vinay Sarda",
+    image: "/tech/github.webp",
+    link: "https://github.com/Vinay2812",
   },
   {
     id: 3,
     testimonial:
-      "Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
-    name: "Om Patel",
-    image: "/socialmedia/dribble.svg",
-    link: "https://dribbble.com/om2121",
+      "Also do check out my Leetcode Profile where I have solved 400+ DSA problems.",
+    name: "Vinay Sarda",
+    image:
+      "https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png",
+    link: "https://leetcode.com/u/vinay2812/",
   },
   {
     id: 4,
     testimonial:
-      "Also do check out my UI/UX Portfolio where I have shared by design studies.",
-    name: "Om Patel",
-    image: "/socialmedia/portfolio.svg",
-    link: "https://omthecreator.netlify.app/",
-  },
-  {
-    id: 5,
-    testimonial:
-      "Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
-    name: "Om Patel",
-    image: "/tech/github.webp",
-    link: "https://github.com/omunite215",
+      "Also do check out my GFG profile where I have solved 450+ DSA problems.",
+    name: "Vinay Sarda",
+    image: "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+    link: "https://www.geeksforgeeks.org/user/vinaysarda2812/",
   },
 ];
 
 const projects = [
   {
-    name: "Random Quote Generator",
+    name: "Socialize",
     description:
-      "A Fully Responsive Random Quote generating website project given by Free Code Camp while completing Front-End Libraries Certifications built using React.JS , Bootstrap CSS and HTML.",
+      "A dynamic social media app with real-time updates using React.js and Socket.io. Backend powered by Node.js and Express.js, with data stored in MongoDB and media handled via Firebase.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "Node.js",
         color: "pink-text-gradient",
       },
       {
-        name: "quoteapi",
+        name: "MongoDB",
         color: "orange-text-gradient",
       },
-    ],
-    image: "/projectimg/quote.webp",
-    source_code_link:
-      "https://github.com/omunite215/FCC-Random-Quote-Generator",
-    netlify_link: "https://randomquotegeneratorbyom.netlify.app/",
-  },
-  {
-    name: "Admin Dashboard UI",
-    description:
-      "React Admin Dashboard is a stunning web application that has a beautiful User Interface and has been built using advanced JavaScript concepts, React, and Tailwind CSS which has different graphs, stats and themes.",
-    tags: [
       {
-        name: "react",
+        name: "Socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
         color: "blue-text-gradient",
       },
       {
-        name: "Syncfusion UI",
+        name: "Express.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Material UI",
         color: "orange-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "green-text-gradient",
       },
     ],
-    image: "/projectimg/dashboard.webp",
+    image: "/projectimg/socialize.png",
+    source_code_link: "https://github.com/Vinay2812/Socialize",
+    netlify_link: "https://socialize-by-vinay.vercel.app/",
+  },
+  {
+    name: "Realtime Tic Tac Toe",
+    description:
+      "A real-time multiplayer Tic-Tac-Toe game built with React and Redux for the frontend, and Node.js and Express.js for the backend. Real-time updates handled by Socket.io.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Socket.io",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/projectimg/tictactoe.png",
     source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
     netlify_link: "https://reactadmindashboardbyom.netlify.app/",
   },
   {
-    name: "HooBank",
+    name: "Portfolio website",
     description:
-      "A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
+      "A personal portfolio website built using Next.js, React, and Tailwind CSS to showcase my projects and skills. The website integrates Email.js for easy contact form functionality, allowing users to reach out directly. The website is fully responsive, providing an optimized experience across various devices.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-    ],
-    image: "/projectimg/hoobank.webp",
-    source_code_link: "https://github.com/omunite215/hoobank",
-    netlify_link: "https://hoobankbyom.netlify.app/",
-  },
-  {
-    name: "Provid A Youtube Clone",
-    description:
-      "Provid is a YouTube clone project built with React, Material UI, and Tailwind CSS. The platform has been designed with a stunning dark mode that enhances the viewing experience. The user interface is intuitive and easy to navigate, ensuring that users can easily find the content they're looking for.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "materialui",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "/projectimg/provid.webp",
-    source_code_link: "https://github.com/omunite215/Provid-A-YouTube-Clone",
-    netlify_link: "https://providbyom.netlify.app/",
-  },
-  {
-    name: "A 3D Developer Portfolio",
-    description:
-      "A responsive 3D Portfolio website which is made using Three.js a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL. It has a beautiful interface made using Tailwind CSS and React.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Next.js",
         color: "green-text-gradient",
       },
       {
-        name: "threejs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "emailjs",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Email.js",
+        color: "orange-text-gradient",
+      },
     ],
-    image: "/projectimg/portfoliosample.webp",
+    image: "/projectimg/portfolio.png",
     source_code_link: "https://github.com/omunite215/portfolio",
     netlify_link: "https://portfoliobyompatel.netlify.app/",
   },

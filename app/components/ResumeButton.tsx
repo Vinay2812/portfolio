@@ -4,7 +4,11 @@ import React from "react";
 
 const ResumeButton = () => {
   return (
-    <a href="/resume.pdf" download="Vinay_Resume">
+    <a
+      href="https://drive.usercontent.google.com/download?id=1e8zoNSrqMHnJ65CnsFjKgAEm5NA_r6w4&export=download&authuser=0&confirm=t&uuid=1baf55ee-ffa2-4129-b1a2-4231c3d3433c&at=APcmpoygJBuVZlYcHrzy2LpjJDzp:1746373716488"
+      download="Vinay_Resume"
+      target="_blank"
+    >
       <button
         type="button"
         className=" font-medium text-center px-3 py-3 flex gap-1 justify-center rounded-md transition ease-in-out delay-150 bg-[#915EFF] hover:-translate-y-1 hover:scale-110 hover:bg-purple-600 duration-300"
