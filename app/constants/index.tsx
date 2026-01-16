@@ -164,11 +164,24 @@ const technologies = {
 
 const experiences = [
   {
+    title: "Full-stack Software Engineer",
+    company_name: "Imversion Technologies",
+    icon: "https://i0.wp.com/imversion.com/wp-content/uploads/2024/11/imversion-color.png?fit=101%2C44&ssl=1",
+    iconBg: "#383E56",
+    date: "June 2025 - Present",
+    points: [
+      "Designed and deployed a payment reminder notification system using Next.js, Apollo, and Chargebee, generating $120,000+ in revenue and recovering the longest outstanding invoice for 280 days.",
+      "Built a self-service portal with role-based access control for team management, feature allocation, and billing, reducing support requests by 20-30%. Configured real-time email alerts using SQS, Lambda, and SES.",
+      "Architected plans migration to attribute-based access control using Prisma and PostgreSQL, synchronising Chargebee webhooks for subscription management, reducing manual access overhead by 70%.",
+      "Automated newsletter subscription management for 125+ campaigns via Cakemail with AWS SQS/Lambda, achieving 100% automation of manual enrollment processes.",
+    ],
+  },
+  {
     title: "SDE - I",
     company_name: "InfyBytes AI Labs Pvt. Ltd.",
-    icon: "https://play-lh.googleusercontent.com/VJoGzC0zd8ZrM7UCnkR95BfBHXiHpXVdeRUnIKunyNOLLMX-_o25tYucGQGqmdJR2b0=s96-rw",
+    icon: "https://cdn.homeworkapp.ai/sets-gamify-assets/math-ai-assets/assets/onboarding/avatar.png",
     iconBg: "#383E56",
-    date: "Aug 2023 -  Current",
+    date: "Aug 2023 - May 2025",
     points: [
       "Led a cloud migration project from AWS (EC2, S3, Lambda, RDS, MongoDB) to GCP (VM, Cloud Storage, Cloud Run, CloudSQL), reducing operational costs by 30-35% and deployment time by 40%.",
       "Engineered an audio generation system using ElevenLabs/OpenAI and AWS SQS, improving feature usage by 35% and user feedback by 60% through efficient rate limit management and MongoDB caching",
@@ -181,7 +194,7 @@ const experiences = [
     company_name: "InfyBytes AI Labs Pvt. Ltd.",
     icon: "https://play-lh.googleusercontent.com/_1GuCvc8dhJ8JECFa52V8ngD1uM9fMPhztmHjsAM36zuBbZbr0wJsUMBERnRFUCaPFQ=s96-rw",
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Aug 2023",
+    date: "Feb 2023 - July 2023",
     points: [
       "Integrated Razorpay for web-based payments and developed custom native plugins for Android and Apple platforms, processing transactions that generated 2 million INR in revenue",
       "Enhanced API response times by 71% through Redis caching and query optimization in MongoDB and GraphQL, improving user experience",
