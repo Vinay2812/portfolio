@@ -41,9 +41,7 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-black-100/80 backdrop-blur-xl border-b border-white/10"
-          : "bg-transparent"
+         "bg-black-100/80 backdrop-blur-xl border-b border-white/10"
       )}
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-16">
@@ -122,7 +120,7 @@ export function Navbar() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 top-16 z-40 bg-black-100/95 backdrop-blur-xl transition-transform duration-300 md:hidden sm:top-20",
+          "fixed inset-0 top-16 z-100 h-dvh bg-black-100 backdrop-blur-xl transition-transform duration-300 md:hidden sm:top-20",
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
