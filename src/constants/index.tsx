@@ -32,7 +32,7 @@ export const services = [
   },
 ];
 
-export const technologies = {
+export const technologies: Record<string, { image: string; color: string; backgroundColor?: string }> = {
   "Next.js": {
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     color: "#000000",
@@ -48,10 +48,12 @@ export const technologies = {
   "Express.js": {
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     color: "#000000",
+    backgroundColor: "#FFFFFF",
   },
   "Socket.io": {
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
     color: "#010101",
+    backgroundColor: "#FFFFFF",
   },
   Redux: {
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",

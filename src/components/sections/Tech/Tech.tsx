@@ -6,6 +6,7 @@ import { IconCloud } from "@/components/ui/icon-cloud";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const techList = Object.entries(technologies);
 
@@ -59,7 +60,11 @@ export function Tech() {
                     src={tech.image}
                     alt={name}
                     fill
-                    className="object-contain"
+                    className={"object-contain"}
+                    style={{
+                      backgroundColor: tech.backgroundColor,
+                    }}
+
                   />
                 </div>
                 <span className="line-clamp-1 text-center text-[10px] font-medium text-muted-foreground group-hover:text-white sm:text-xs">
