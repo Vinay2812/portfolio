@@ -89,7 +89,11 @@ export function Navbar() {
 
           {/* Desktop Resume Button */}
           <div className="hidden md:block">
-            <a href="/resume.pdf" download="Vinay_Resume">
+            <a
+              href="https://cdn.personel.prodapp.club/Vinay-resume.pdf"
+              download="Vinay-resume.pdf"
+              target="_blank"
+            >
               <ShimmerButton
                 className="px-4 py-2 text-sm"
                 background="rgba(145, 94, 255, 0.8)"
@@ -144,7 +148,8 @@ export function Navbar() {
           <div className="mt-4 border-t border-white/10 pt-4">
             <a
               href="https://cdn.personel.prodapp.club/Vinay-resume.pdf"
-              download
+              download="Vinay-resume.pdf"
+              target="_blank"
               className="block"
             >
               <ShimmerButton
