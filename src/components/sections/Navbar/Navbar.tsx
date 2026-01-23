@@ -143,7 +143,7 @@ export function Navbar() {
 
           <div className="mt-4 border-t border-white/10 pt-4">
             <a
-              href="https://pub-8f47b3c2949b47beac3e3980650d8d06.r2.dev/Vinay-resume.pdf"
+              href="https://cdn.personel.prodapp.club/Vinay-resume.pdf"
               download
               className="block"
             >
