@@ -37,6 +37,20 @@ export function Navbar() {
     setMobileMenuOpen(false);
   };
 
+  const handleDownloadResume = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const response = await fetch(
+      "https://cdn.personel.prodapp.club/Vinay-resume.pdf",
+    );
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Vinay-resume.pdf";
+    a.click();
+    window.URL.revokeObjectURL(url);
+  };
+
   return (
     <nav
       className={cn(
@@ -89,22 +103,17 @@ export function Navbar() {
 
           {/* Desktop Resume Button */}
           <div className="hidden md:block">
-            <a
-              href="https://cdn.personel.prodapp.club/Vinay-resume.pdf"
-              download="Vinay-resume.pdf"
-              target="_blank"
+            <ShimmerButton
+              className="px-4 py-2 text-sm"
+              background="rgba(145, 94, 255, 0.8)"
+              shimmerColor="rgba(255, 255, 255, 0.5)"
+              onClick={handleDownloadResume}
             >
-              <ShimmerButton
-                className="px-4 py-2 text-sm"
-                background="rgba(145, 94, 255, 0.8)"
-                shimmerColor="rgba(255, 255, 255, 0.5)"
-              >
-                <span className="flex items-center gap-2">
-                  <FileText className="size-4" />
-                  Resume
-                </span>
-              </ShimmerButton>
-            </a>
+              <span className="flex items-center gap-2">
+                <FileText className="size-4" />
+                Resume
+              </span>
+            </ShimmerButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -146,23 +155,17 @@ export function Navbar() {
           ))}
 
           <div className="mt-4 border-t border-white/10 pt-4">
-            <a
-              href="https://cdn.personel.prodapp.club/Vinay-resume.pdf"
-              download="Vinay-resume.pdf"
-              target="_blank"
-              className="block"
+            <ShimmerButton
+              className="w-full py-3"
+              background="rgba(145, 94, 255, 0.8)"
+              shimmerColor="rgba(255, 255, 255, 0.5)"
+              onClick={handleDownloadResume}
             >
-              <ShimmerButton
-                className="w-full py-3"
-                background="rgba(145, 94, 255, 0.8)"
-                shimmerColor="rgba(255, 255, 255, 0.5)"
-              >
-                <span className="flex items-center justify-center gap-2">
-                  <FileText className="size-5" />
-                  Download Resume
-                </span>
-              </ShimmerButton>
-            </a>
+              <span className="flex items-center justify-center gap-2">
+                <FileText className="size-5" />
+                Download Resume
+              </span>
+            </ShimmerButton>
           </div>
         </div>
       </div>
