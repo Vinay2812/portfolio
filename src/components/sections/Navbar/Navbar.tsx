@@ -37,18 +37,11 @@ export function Navbar() {
     setMobileMenuOpen(false);
   };
 
-  const handleDownloadResume = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    const response = await fetch(
-      "https://cdn.personel.prodapp.club/Vinay-resume.pdf",
-    );
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
+  const handleDownloadResume = () => {
     const a = document.createElement("a");
-    a.href = url;
+    a.href = "/api/resume";
     a.download = "Vinay-resume.pdf";
     a.click();
-    window.URL.revokeObjectURL(url);
   };
 
   return (
